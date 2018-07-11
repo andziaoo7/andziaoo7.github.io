@@ -1,0 +1,104 @@
+.jumbotron {
+  width: 100%;
+  height: 100vh;
+  // padding-top: 42vh;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url(https://cdn.pbrd.co/images/HtR5Dge.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    li {
+      list-style-type: none;
+      padding: 20px 30px;
+      margin: 0 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      // background-color: #fff;
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+        position: relative;
+        padding-bottom: 6px;
+        :hover {
+          cursor: pointer;
+          color: whitesmoke;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          bottom: 0;
+          left: 0;
+          background-color: whitesmoke;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+        &:hover::before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  .welcome-text {
+    // height: 30vh;
+    padding-top: 22vh;
+    color: whitesmoke;
+    font-size: 30px;
+    width: 800px
+    p {
+      font-size: 25px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      .icon {
+        margin: 0 20px;
+        a {
+          color: whitesmoke;
+        }
+        .fa-linkedin-in:hover,
+        .fa-github:hover,
+        .fa-skype:hover {
+          color: #c4b0bb;
+        }
+      }
+    }
+  }
+  .scroll-icon {
+    color: whitesmoke;
+    top: 91%;
+    left: 50%;
+    position: absolute;
+    font-size: 23px;
+    a {
+      color: whitesmoke;
+      :hover{
+        color: #c4b0bb;
+      }
+    }
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-section {
+  height: 100vh;
+  h2 {
+    margin-top: 0;
+  }
+}
